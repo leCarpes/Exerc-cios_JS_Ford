@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt- BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Letícia Carpes">
+    <title>DescontoFuncionario</title>
+</head>
+<body>
+
+    <script>
+
+      let totalCompra = parseInt(prompt("Qual o valor da compra?"));
+      let clienteTipo = parseInt(prompt("Digite 1 para Cliente Comum.\nDigite 2 para Cliente Funcionário.\nDigite 3 para Cliente VIP."))
+
+      
+
+    //   alert(totalCompra);
+    //   alert(clienteTipo);
+
+      switch (clienteTipo) {
+        case 1:    
+        alert(totalCompra);
+        break;
+
+        case 2:
+        alert(totalCompra * 0.9);
+        break;
+
+        case 3:
+        alert(totalCompra * 0.95);
+
+      }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt- BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Letícia Carpes">
+    <title>CalculoTriângulo</title>
+</head>
+<body>
+
+    <script>
+
+        let med01 = parseInt(prompt("Qual a medida 01?"));
+        let med02 = parseInt(prompt("Qual a medida 02?"));
+        let med03 = parseInt(prompt("Qual a medida 03?"));
+
+
+        if (med01 == med02 && med01 == med03) {
+            alert("Triângulo Equilátero");
+        } else if (med01 != med02 && med01 != med03 && med02 != med03) {
+            alert("Triângulo Escaleno ");
+        } else{
+            alert("Triângulo Isóceles")
+        }
+            
+
+    </script>
+    
+</body>
+</html>
