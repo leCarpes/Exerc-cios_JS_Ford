@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt- BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Letícia Carpes">
+    <title>JogoFutebol</title>
+</head>
+<body>
+
+    <script>
+
+        let x = (prompt('Qual o nome do time mandante?'));
+        let y = (prompt('Qual o nome do time visitante?'));
+        let placarCas = parseInt(prompt('Qual o placar do time mandante?'));
+        let placarVis = parseInt(prompt('Qual o placar do time visitante?'))
+
+        if (placarCas > placarVis) {
+            alert(`Vitória do time mandante: ${x}, pelo placar: ${placarCas} X ${placarVis}`);
+            
+        }else if(placarCas < placarVis) {
+            alert(`Vitória do time visitante: ${y}, pelo placar: ${placarCas} X ${placarVis}`);
+        }else {
+            alert(`Os times empataram: ${x} - ${y}, pelo placar: ${placarCas} X ${placarVis}`);
+        }
+
+    </script>
+    
+</body>
+</html>
