@@ -10,7 +10,32 @@
 
     <script>
 
+let comb = prompt("Digite qual tipo de combustível:\n1 - A - Álcool\n2 - G - Gasolina");
+        let litro = prompt("Digite quantos litros será abastecido.");
+
+        switch (comb) {
+            case "A":
+                if (litro <= 20) {
+                a1 = ((litro * 4.9) * 0.97);
+
+                    alert (`O valor será de R$${a1}`);
+                } else if (litro > 20) {
+                a2 = ((litro * 4.9) * 0.95);
+                    alert (`O valor será de R$${a2}`);
+                }
+                    break;
+
+            case "G":
+                if (litro <= 20) {
+                g1 = ((litro * 5.30) * 0.96);
         
+                    alert (`O valor será de R$${g1}`);
+                } else if (litro > 20) {
+                g2 = ((litro * 5.30) * 0.94);
+                    alert (`O valor será de R$${g2}`);
+                }        
+                    break;
+        }
         
     </script>
     

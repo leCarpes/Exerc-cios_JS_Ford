@@ -10,6 +10,23 @@
 
     <script>
         
+        let nameProd = prompt("Informar o nome do produto que comprou");
+        let quantProd = prompt("Informar a quantidade do produto que comprou");
+        let priceProd = prompt("Informar o preço unitário do produto que comprou");
+
+        if (quantProd <= 5) {
+            total1 = ((quantProd*priceProd)*0.98);
+            alert (`Foi comprado ${quantProd} unidade(s) do produto ${nameProd}\nE o preço de cada produto é ${priceProd}\nO desconto dado foi de 2%\nO valor total a ser pago é de ${total1} `);
+
+        } else if (quantProd > 5 && quantProd <=10){
+            total2 = ((quantProd*priceProd)*0.97);
+            alert (`Foi comprado ${quantProd} unidade(s) do produto ${nameProd}\nE o preço de cada produto é ${priceProd}\nO desconto dado foi de 3%\nO valor total a ser pago é de ${total2} `);
+
+        } else if (quantProd > 10){
+            total3 = ((quantProd*priceProd)*0.95);
+            alert (`Foi comprado ${quantProd} unidade(s) do produto ${nameProd}\nE o preço de cada produto é ${priceProd}\nO desconto dado foi de 5%\nO valor total a ser pago é de ${total3} `);
+        }
+
     </script>
     
 </body>

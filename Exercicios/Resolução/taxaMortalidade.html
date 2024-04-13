@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Letícia Carpes">
-    <title>TaxaMortalidade</title>
+    <title>TaxaMortalidade/Natalidade</title>
 </head>
 <body>
 
     <script>
         
+        let choice = (prompt("O que deseja calcular:\nN - Natalidade.\nM - Mortalidade"));
+        let numb = parseInt(prompt("Caso escolhido Natalidade, iformar número de crianças nascidas:\nCaso escolhido Mortalidade, informar número de crianças falecidas"));
+        let hab = parseInt(prompt("Insira o número e habitantes:"))
+
+        switch (choice) {
+
+            case "N":
+            nat = ((numb * 1000)/hab)
+                alert(`A taxa de natalidade é: ${nat} por 1000 habitantes`)
+                break;
+
+            case "M":
+                mat = ((numb * 1000)/hab)
+                alert(`A taxa de mortaliade é: ${mat} por 1000 habitantes`);
+                break;
+        }
+
     </script>
     
 </body>
